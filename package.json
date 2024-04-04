@@ -25,6 +25,7 @@
     "@types/node": "^20.12.3",
     "nodemon": "^3.1.0",
     "sequelize-cli": "^6.6.2",
+    "sequelize-typescript": "^2.1.6",
     "typescript": "^5.4.3"
   }
 }
