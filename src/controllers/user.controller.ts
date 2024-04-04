@@ -8,14 +8,6 @@ import { v4 as uuidv4 } from "uuid";
 import { ValidationError as SequelizeValidationError } from "sequelize";
 
 class UserController {
-    public async createUser(req: Request, res: Response): Promise<void> {
-        try {
-            // Your existing createUser logic here
-        } catch (error) {
-            console.error(error);
-            res.status(500).json({ message: "Internal server error" });
-        }
-    }
 
     public async register(req: Request, res: Response): Promise<void> {
         try {
