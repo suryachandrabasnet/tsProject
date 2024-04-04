@@ -1,3 +1,11 @@
+import { User } from "../models";
+
+declare module 'express' {
+    interface Request {
+      user?: User;
+    }
+  }
+
 interface UserInterface {
     id?: number;
     firstName: string;
@@ -5,6 +13,7 @@ interface UserInterface {
     email: string;
     phoneNumber: number;
     password: string;
+    role?: string;
 }
 
 export default UserInterface;
